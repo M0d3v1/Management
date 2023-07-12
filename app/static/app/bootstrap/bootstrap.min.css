@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Management System</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="text-center">Employee Management System</h1>
+    <!-- Add navigation links if required -->
+  </header>
+
+  <main class="container">
+    <!-- Employee List -->
+    <section>
+      <h2>Employee List</h2>
+      <table class="table table-striped">
+        <thead class="thead-light">
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Position</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Display employee records dynamically using JavaScript or template engine -->
+          <tr>
+            <td>John Doe</td>
+            <td>johndoe@example.com</td>
+            <td>HR</td>
+            <td>Manager</td>
+            <td>
+              <button class="btn btn-primary">Edit</button>
+              <button class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Employee Form -->
+    <section>
+      <h2>Add/Edit Employee</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="department">Department:</label>
+          <input type="text" class="form-control" id="department" name="department">
+        </div>
+
+        <div class="form-group">
+          <label for="position">Position:</label>
+          <input type="text" class="form-control" id="position" name="position">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-light text-center">
+    <p>&copy; 2023 Employee Management System. All rights reserved.</p>
+  </footer>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
